@@ -20,3 +20,8 @@ process.stdin.on('data', (data) => {
 		process.stdout.write('You typed: ' + cmd);
 	}
 });
+
+function done (output) {
+	process.stdout.write(output);
+	process.stdout.write("\nprompt > ");
+}
